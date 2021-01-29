@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 15px;
+}
+
+.container{
+    max-width: 1330px;
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav{
+    width: 100%;
+    background-color: #21b9d8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9000;
+}
+
+nav .logo{
+    width: 25%;
+}
+
+nav .logo a{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+nav .logo a:hover{
+    color: #000;
+    transition: 1s;
+}
+
+/* nav .logo a:visited{
+    color: #000;
+    text-decoration: none;
+} */
+
+
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #000;
+    transition: 500ms;
+}
+
+.active{
+    background-color: #fff;
+}
+
+.banner{
+    width: 100%;
+    background-color: #21b9d8;
+}
+
+.banner .left{
+    background-color: antiquewhite;
+    background: url("../img/1.png") no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+
+}
+
+.banner .right{
+    width: 50%;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+.banner .right h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.banner .right p{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.service{
+    width: 100%;
+    padding: 4rem 1rem;
+    text-align: center;
+
+}
+
+.service h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #21b9d8;
+    letter-spacing: 2px;
+    margin-bottom: 6rem;
+}
+
+.service span{
+    font-size: 5rem;
+    color: #21b9d8;
+    margin-bottom: 4rem;
+}
+
+.service p{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.owl-carousel.owl-drag .owl-item{
+    background-color: #acacac2c;
+    padding: 4rem 0rem;
+}
+
+.counter{
+    width: 100%;
+    padding: 4rem 0rem;
+    text-align: center;
+    background-color: #21b9d8;
+}
+
+.counter h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 6rem;
+}
+
+.counter .c-text{
+    background-color: #fff;
+    width: 100%;
+    padding: 0rem;
+}
+
+.counter .c-text .c-top h3{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    margin: 0px;
+}
+
+.counter .c-text .c-bottom h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    margin: 0px;
+}
+
+.c-col{
+    background-color: #21b9d8;
+}
+
+.c-w{
+    color: #fff;
+}
+
+.c-b{
+    color: #21b9d8;
+}
+
+
+.testi{
+    width: 100%;
+    padding: 5rem 0rem;
+    text-align: center;
+    background-color: #21b9d8;
+}
+
+.testi h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 5rem;
+}
+.testi .test-l{
+    padding: 2rem 1rem;
+    
+}
+
+.testi .item:hover{
+    margin-top: -10px;
+    transition: 500ms;
+    box-shadow: 0px 0px 10px 10px #b0dde6f1;
+    cursor: pointer;
+}
+
+.testi .test-l img{
+    width: 25% !important;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.testi .test-l p{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.testi .test-l h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3.5rem;
+    color: #fff;
+}
+
+.testi .test-l h4{
+    font-size: 1.5rem;
+    font-weight: 900;
+    
+}
+
+.blog{
+    width: 100%;
+    padding: 5rem 1.5rem;
+    position: relative;
+}
+
+.blog h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #21b9d8;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.blog p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+}
+
+.blog .blog-text{
+    padding: 1rem;
+    position: relative;
+}
+
+.blog .blog-text img{
+    width: 100%;
+}
+
+.blog .blog-text .box{
+    position: absolute;
+    background-color: #21b9d8;
+    padding: 1rem;
+    top: 350px;
+    left: 0;
+    color: #fff;
+}
+
+.blog .blog-text h2{
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    font-weight: 800;
+    color: #21b9d8;
+}
+
+.blog .blog-text p{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000;
+    text-align: justify;
+    padding-right:  1rem;
+}
+
+.form{
+    width: 100%;
+    padding: 5rem 1rem;
+}
+
+.form h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #21b9d8;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form form{
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.form form .flex{
+    align-items: flex-start;
+}
+
+
+.f-left{
+    width: 50%;
+    padding: 1rem;
+}
+
+.f-right{
+    width: 50%;
+    padding: 1rem;
+}
+.form form input{
+    width: 100%;
+    border: 2px solid #21b9d8;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    outline: none;
+}
+
+.form form input:focus{
+    box-shadow: 0px 0px 10px 1px #21b9d8;
+    border: none;
+}
+
+.form form textarea{
+    width: 100%;
+    height: 227px;
+    border: 2px solid #21b9d8;
+    padding: 1.5rem;
+    font-size: 2rem;
+    outline: none;
+    resize: vertical;
+}
+
+.form form textarea:focus{
+    box-shadow: 0px 0px 10px 1px #21b9d8;
+    border: none;
+}
+
+.form form button{
+    text-align: center;
+    width: 180px;
+    height: 60px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #21b9d8;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    transition: 500ms;
+}
+
+.form form button:hover{
+    border: 2px solid #21b9d8;
+    background-color: #fff;
+    color: #21b9d8;
+}
+
+footer{
+    width: 100%;
+    background-color: #21b9d8;
+    padding: 3rem 1rem;
+}
+
+footer .flex{
+    align-items: flex-start;
+}
+
+footer .foot-box{
+    width: 25%;
+    padding: 2rem;
+}
+
+footer .foot-box h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+}
+
+footer .foot-box p{
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: justify;
+    padding-right: 1rem;
+}
+
+footer .foot-box ul li{
+    list-style: none;
+    line-height: 3rem;
+}
+
+footer .foot-box ul li a{
+    font-size: 1.7rem;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+footer .foot-box ul li a:hover{
+    color: #fff;
+    text-decoration: underline;
+
+}
+
+footer .foot-box form{
+    padding: 2rem;
+}
+footer .foot-box input{
+    width: 100%;
+    height: 50px;
+    padding-left: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+footer .foot-box input::placeholder{
+    color: #fff;
+}
+
+footer .foot-box button{
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: #21b9d8;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+}
+
+footer .copy{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#menu{
+    display: none;
+}
+
+@media (max-width:768px){
+
+
+    html{
+        font-size: 8px;
+    }
+
+    nav .logo a{
+        font-size: 2rem;
+    }
+
+
+    .banner .right h1{
+        font-size: 2rem;
+
+    }
+
+    .banner .right p{
+        font-size: 1.5rem;
+    }
+
+    .service h1{
+        font-size: 2rem;
+    }
+
+    .service p{
+        font-size: 1.2rem;
+    }
+
+    .testi h1{
+        font-size: 2rem;
+    }
+
+    .testi .test-l p{
+        font-size: 1.2rem;
+    }
+
+    .testi .test-l h2{
+        font-size: 1.5rem;
+    }
+
+    .blog h1{
+        font-size: 2rem;
+    }
+
+    .blog .blog-text h2{
+        font-size: 1.5rem;
+    }
+
+    .blog .blog-text p{
+        font-size: 1.2rem;
+    }
+
+    .counter h1{
+        font-size: 2rem;
+    }
+
+    .counter .c-text .c-top h3{
+        font-size: 1.5rem;
+    }
+
+    .counter .c-text .c-bottom h3{
+        font-size: 1.5rem;
+    }
+
+    .form h1{
+        font-size: 2rem;
+    }
+
+    .form form input{
+        font-size: 1.5rem;
+    }
+
+    .form form textarea{
+        font-size: 1.5rem;
+    }
+
+    .form form button{
+        font-size: 1.5rem;
+    }
+
+    .form h1{
+        font-size: 2rem;
+    }
+
+    .blog .blog-text .box {
+        top: 320px;
+        left: 0;
+        
+    }
+
+
+    .ull{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #21b9d8;
+        color: #21b9d8 !important;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .ull li {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    
+
+    .flex{
+        flex-direction: column;
+    }
+
+    nav .flex{
+        flex-direction: row;
+        align-items: center;
+    }
+    #menu{
+        display: block;
+        width: 50px;
+        transition: 500ms;
+        z-index: 1;
+    }
+
+    #menu .line{
+        width: 80%;
+        height: 4px;
+        background-color: #fff;
+        display: block;
+        margin: 5px auto;
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .change #line1{
+        transform: translateY(8.5px) rotate(-45deg);
+    }
+
+    .change #line2{
+        opacity: 0;
+    }
+
+    .change #line3{
+        transform: translateY(-8.5px) rotate(45deg);
+    }
+
+    .banner .left,
+    .banner .right,
+    .f-left,
+    .f-right,
+    .foot-box{
+        width: 100%;
+    }
+
+    footer .foot-box{
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:320px){
+
+    html{
+        font-size: 5px;
+    }
+
+    .blog .blog-text .box {
+        top: 230px;
+        left: 0;
+        
+    }
+}
